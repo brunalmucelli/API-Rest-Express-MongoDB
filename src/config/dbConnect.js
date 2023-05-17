@@ -1,3 +1,7 @@
-import mongoose from "mongoose.js";
+import mongoose from "mongoose";
 
-mongoose.connect("");
+mongoose.connect("mongodb+srv://brunalmucelli:bmb232425@alura.hdvjm2m.mongodb.net/alura-node");
+
+let db = mongoose.connection;
+
+export default db;
